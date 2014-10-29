@@ -1,6 +1,6 @@
-<?
+<?	
 	$content = $_POST['content'];
-	$date = date("Y-m-d H:i:s",time());
+	$date = date("y.m.d H:i:s",time());
 	if($content){
 		$db = @mysql_connect("localhost", "root", "apmsetup") or exit('DB error');
 		@mysql_select_db("ask", $db) or exit('DB error');
@@ -15,5 +15,6 @@
 		@mysql_close($db);
 	}
 ?>
-<br>
-<a href = "index.php">홈으로 돌아가기</a>
+<script>
+location.href = "index.php";
+</script>

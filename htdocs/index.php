@@ -86,7 +86,7 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <form class="form-horizontal" role="search" action = "db_board.php" method = "post">
+            <form class="form-horizontal" action = "db_board.php" method = "post">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="input-group">
@@ -111,6 +111,9 @@
                         </button>
                     </a> -->
                     <hr class="star-primary">
+					<?
+						include("content.php");
+					?>
                 </div>
             </div>
         </div>
